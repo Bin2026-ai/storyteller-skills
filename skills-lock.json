@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "skills": {
+    "storyteller-content-reviewer": {
+      "source": "Bin2026-ai/storyteller-skills",
+      "sourceType": "github",
+      "skillPath": "skills/storyteller-content-reviewer/SKILL.md",
+      "computedHash": "4fada50e734821a7f35d25c6bb3ab4c10498d82bf69f8293794aaddb2e9b22b8"
+    },
+    "storyteller-score-calculator": {
+      "source": "Bin2026-ai/storyteller-skills",
+      "sourceType": "github",
+      "skillPath": "skills/storyteller-score-calculator/SKILL.md",
+      "computedHash": "92b4fa30b40453184adfcee3615afdfb5b7fc2f723248d0bd8e594547de587aa"
+    },
+    "storyteller-topic-suggester": {
+      "source": "Bin2026-ai/storyteller-skills",
+      "sourceType": "github",
+      "skillPath": "skills/storyteller-topic-suggester/SKILL.md",
+      "computedHash": "eb8d546fd026ba37a572df0fa4c4e08ceaa55759671c785b08201fa99bf152fb"
+    }
+  }
+}
