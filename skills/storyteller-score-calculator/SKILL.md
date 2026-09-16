@@ -45,14 +45,18 @@ Barbara 每月初调用此技能，完成当月故事官积分的自动统计，
 
 ## 第一步：获取基本信息
 Barbara 启动时提供：
-- 故事官 Teams 群名称或链接
 - 统计月份（如：2026年9月）
 - 月度会议 Teams 链接
 - 各故事官历史累计积分（可选，如有上月汇总表）
 
-## 第二步：读取群消息
-- 搜索故事官 Teams 群上月消息
-- 提取所有含链接的消息，按发件人分组
+**故事官 Teams 频道已固定**：
+- 频道名称：SAP故事官俱乐部
+- Teams 对话 ID：`19:n7ITM7itiS8gzxKBbj3k8CXMALgnRxsnOK_sjkveIeY1@thread.tacv2`
+- 使用 `teams_web_messages` 工具，传入此 ID 读取频道消息
+
+## 第二步：读取频道消息
+- 调用 `teams_web_messages`，对话 ID 为 `19:n7ITM7itiS8gzxKBbj3k8CXMALgnRxsnOK_sjkveIeY1@thread.tacv2`，设置 `since` 为统计月份第1日、`until` 为月末
+- 提取所有含链接的消息，按发件人（故事官姓名）分组
 - 过滤带有 **#storyteller故事官** 标签的内容
 - 识别链接平台类型（微信/小红书/B站/LinkedIn/抖音）
 - B站链接自动调用公开 API 获取播放量
@@ -117,8 +121,7 @@ Barbara 启动时提供：
 
 **Barbara 输入**：
 > 帮我统计2026年9月故事官积分。
-> 群名：SAP故事官俱乐部
 > 会议链接：https://teams.microsoft.com/meet/399948842631186?p=Z7R6vG5XfVAi7Dr2rW
 > 截止回复日期：10月8日
 
-技能将自动执行第二至第五步，完成后输出完整积分报告。
+技能将自动读取 SAP故事官俱乐部频道消息，执行第二至第五步，完成后输出完整积分报告。

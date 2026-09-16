@@ -33,10 +33,11 @@ type: reference
 
 ```
 帮我统计2026年X月故事官积分。
-群名：SAP故事官俱乐部
 会议链接：https://teams.microsoft.com/meet/399948842631186?p=Z7R6vG5XfVAi7Dr2rW
 截止回复日期：X月X日
 ```
+
+> **无需提供群名**：技能已内置 SAP故事官俱乐部频道 ID，会自动读取。
 
 ### 技能会自动做什么？
 
